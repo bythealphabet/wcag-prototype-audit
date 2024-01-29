@@ -1,0 +1,6 @@
+{
+  "verbose": false,
+  "ext": ".ts,.js",
+  "watch": ["./server"],
+  "exec": "ts-node server/server.ts"
+}
