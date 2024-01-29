@@ -2,6 +2,8 @@
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -96,12 +98,11 @@ select {
   display: grid;
 
   grid-template-columns:
-    minmax(1em, 1fr) repeat(6, minmax(30px, 125px))
-    minmax(1em, 1fr);
+    minmax(1em, 1fr) repeat(6, minmax(30px, 125px)) minmax(1em, 1fr);
+
   @media (min-width: 900px) {
     grid-template-columns:
-      minmax(5em, 1fr) repeat(12, minmax(50px, 125px))
-      minmax(5em, 1fr);
+      minmax(5em, 1fr) repeat(12, minmax(50px, 125px)) minmax(5em, 1fr);
   }
 }
 
